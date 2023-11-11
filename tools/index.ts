@@ -5,7 +5,7 @@ async function run() {
 
     switch(actionType) {
         case "get-engine":
-            (await import("./runners/get-engine") as any).run()
+            (await import("./runners/get-engine") as any).run(argv)
             break
         case "create-module":
             (await import("./runners/create-module") as any).run(argv)

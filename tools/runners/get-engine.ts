@@ -7,11 +7,12 @@ import {sh} from "../utils";
 
 const Downloader = require("nodejs-file-downloader");
 
-export async function run() {
+export async function run(argv: any) {
+    const tag = argv["tag"]
     console.log("start running init")
 
-    console.log("--- Downloading Engine ----")
-    await downloadEngine()
+    console.log(`--- Downloading Engine for ${tag} ----`)
+    await downloadEngine(tag)
     console.log("--- Downloading Engine Finished ----")
 
 
@@ -20,8 +21,10 @@ export async function run() {
     console.log("--- NPM Restore Engine Finished ----")
 }
 
-let downloadEngine = async function () {
-    let path = "https://github.com/Skedulo/mex-engine/archive/refs/heads/master.zip"
+let downloadEngine = async function (tag?: string) {
+    let path = tag
+        ? `https://github.com/Skedulo/mex-engine/archive/refs/tags/${tag}.zip`
+        : "https://github.com/Skedulo/mex-engine/archive/refs/heads/master.zip"
     let storePath = basePath + "/engine"
     let tmpPath = basePath + "/tmp"
     let fileName = "mex-engine.zip"
