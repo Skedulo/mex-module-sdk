@@ -3,7 +3,8 @@
   "pages": {
     "WelcomePage": {
       "title": "Welcome",
-      "type": "flat"
+      "type": "flat",
+      "items": []
     }
   }
 }
