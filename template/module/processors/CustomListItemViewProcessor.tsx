@@ -2,8 +2,9 @@ import React from "react";
 import {View} from "react-native";
 import {
     AbstractCustomListPageViewProcessor,
-    BaseListPageViewComponentModel, ListPageViewArgs,
+    ListPageViewArgs,
 } from "@skedulo/mex-engine-proxy";
+import {BaseListPageViewComponentModel} from "@skedulo/mex-types";
 
 interface CustomListItemViewComponentModel extends BaseListPageViewComponentModel {
 }

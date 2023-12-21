@@ -10,11 +10,11 @@ function main(): CustomComponentRegistry {
     const registry = new CustomComponentRegistryImpl(moduleName)
 
     const registryFlatPageInfo = {
-        componentProcessor: new CustomFlatPageViewProcessor(moduleName);
+        componentProcessor: new CustomFlatPageViewProcessor(moduleName)
     }
 
     const registryListPageInfo = {
-        componentProcessor: new CustomListItemViewProcessor(moduleName);
+        componentProcessor: new CustomListItemViewProcessor(moduleName)
     }
 
     registry.registerFlatPageComponentProcessor(registryFlatPageInfo)

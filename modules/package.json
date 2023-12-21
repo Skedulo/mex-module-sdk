@@ -10,7 +10,7 @@
     "align-version": "node node_modules/@skedulo/mex-engine-proxy/dist/cli/align-dependency.js"
   },
   "dependencies": {
-    "@skedulo/mex-engine-proxy": "1.0.0-pre77",
+    "@skedulo/mex-engine-proxy": "1.0.0-pre78",
     "@freakycoder/react-native-bounceable": "0.2.2",
     "@klarna/react-native-vector-drawable": "0.4.0",
     "@react-native-clipboard/clipboard": "1.11.2",
